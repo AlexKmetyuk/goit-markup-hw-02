@@ -7,6 +7,10 @@
 body{ 
     color: #757575;
 }
+.list{
+    list-style-type: none;
+}
+/* -------- Шапка сайта -------- */
 header{
     background-color: white;
 }
@@ -34,4 +38,70 @@ header{
 .contacts:hover,
 .contacts:focus{
     color: #2196F3;
+}
+
+/* ------ секция герой (студия) ----- */
+.hero{
+    color: white;
+    background-color: #2F303A;
+}
+.hero-link{
+    color: white;
+    background-color: #2196F3;
+    text-decoration: none;
+}
+
+/* ------Наши особенности (студия)----- */
+.our-features-title{
+    color: #ffffff;
+}
+.our-features-item{
+    color: #212121;
+}
+
+/* -----Чем мы занимаемся (студия)----- */
+.section-title{
+    color: #212121;
+}
+/* -----Наша команда----- */
+.team{
+    background-color: #F5F4FA;
+}
+.team-name{
+    color: #212121;
+}
+
+/* --------Подвал-------- */
+footer{
+    background-color: #2F303A;
+}
+.logo-studio-footer{
+    color: white;
+}
+address{
+    color: white;
+}
+/* -----Кнопки сортировки проектов (портфолио)----- */
+.sort{
+    text-decoration: none;
+    color: #212121;
+    background-color: #F5F4FA;
+}
+.sort:hover,
+.sort:focus{
+    color: white;
+    background-color: #2196F3;
+}
+
+/* -----Список проектов (портфолио)----- */
+.project-list{
+    color: white;
+}
+.project-list-item{
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    width: 370px;
+}
+.project-list-item-title{
+    color: #212121;
 }
