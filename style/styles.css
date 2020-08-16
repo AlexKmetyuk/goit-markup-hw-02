@@ -4,3 +4,34 @@
 /* Цвет выделения #2196F3 */
 /* цвет первичного текста #212121 */
 /* цвет вторичного текста #757575 */
+body{ 
+    color: #757575;
+}
+header{
+    background-color: white;
+}
+.logo{
+    color: #212121;
+    text-decoration: none;
+
+}
+.logo-web{
+    color: #2196F3;
+}
+.nav-link{
+    color: #212121;
+    text-decoration: none;
+}
+.nav-link:hover,
+.nav-link:focus,
+.logo:focus{
+    color: #2196F3;
+}
+.contacts{
+    text-decoration: none;
+    color: #757575;
+}
+.contacts:hover,
+.contacts:focus{
+    color: #2196F3;
+}
