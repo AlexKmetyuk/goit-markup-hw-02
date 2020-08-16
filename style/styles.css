@@ -61,7 +61,7 @@ header{
 
 /* ------Наши особенности (студия)----- */
 .our-features-title{
-    color: #var(--white);
+    color: var(--white);
 }
 .our-features-item{
     color: var(--title-text-color);
