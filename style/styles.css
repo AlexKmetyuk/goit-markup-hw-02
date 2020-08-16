@@ -2,100 +2,108 @@
 /* цвет бекграунда серый #2F303A */
 /* цвет бекграунда светлосерый #F5F4FA */
 /* Цвет выделения #2196F3 */
-/* цвет первичного текста #212121 */
-/* цвет вторичного текста #757575 */
+/* цвет первичного текста #757575 */
+/* цвет вторичного текста #212121 */
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --selection-text-color: #2196F3;
+    --white: #ffffff;
+    --backgraund-color-1: #2F303A;
+    --backgraung-color-2: #F5F4FA;
+}
 body{ 
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .list{
     list-style-type: none;
 }
 /* -------- Шапка сайта -------- */
 header{
-    background-color: white;
+    background-color: var(--white);
 }
 .logo{
-    color: #212121;
+    color: var(--title-text-color);
     text-decoration: none;
 
 }
 .logo-web{
-    color: #2196F3;
+    color: var(--selection-text-color);
 }
 .nav-link{
-    color: #212121;
+    color: var(--title-text-color);
     text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus,
 .logo:focus{
-    color: #2196F3;
+    color: var(--selection-text-color);
 }
 .contacts{
     text-decoration: none;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .contacts:hover,
 .contacts:focus{
-    color: #2196F3;
+    color: var(--selection-text-color);
 }
 
 /* ------ секция герой (студия) ----- */
 .hero{
-    color: white;
-    background-color: #2F303A;
+    color: var(--white);
+    background-color: var(--backgraund-color-1);
 }
 .hero-link{
-    color: white;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--selection-text-color);
     text-decoration: none;
 }
 
 /* ------Наши особенности (студия)----- */
 .our-features-title{
-    color: #ffffff;
+    color: #var(--white);
 }
 .our-features-item{
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 /* -----Чем мы занимаемся (студия)----- */
 .section-title{
-    color: #212121;
+    color: var(--title-text-color);
 }
 /* -----Наша команда----- */
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--backgraung-color-2);
 }
 .team-name{
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 /* --------Подвал-------- */
 footer{
-    background-color: #2F303A;
+    background-color: var(--backgraund-color-1);
 }
 .logo-studio-footer{
-    color: white;
+    color: var(--white);
 }
 address{
-    color: white;
+    color: var(--white);
 }
 /* -----Кнопки сортировки проектов (портфолио)----- */
 .sort{
     text-decoration: none;
-    color: #212121;
-    background-color: #F5F4FA;
+    color: var(--title-text-color);
+    background-color: var(--backgraung-color-2);
 }
 .sort:hover,
 .sort:focus{
-    color: white;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--selection-text-color);
 }
 
 /* -----Список проектов (портфолио)----- */
 .project-list{
-    color: white;
+    color: var(--white);
 }
 .project-list-item{
     border: 1px solid #EEEEEE;
@@ -103,5 +111,5 @@ address{
     width: 370px;
 }
 .project-list-item-title{
-    color: #212121;
+    color: var(--title-text-color);
 }
