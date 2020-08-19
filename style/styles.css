@@ -4,112 +4,182 @@
 /* Цвет выделения #2196F3 */
 /* цвет первичного текста #757575 */
 /* цвет вторичного текста #212121 */
-:root{
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --selection-text-color: #2196F3;
-    --white: #ffffff;
-    --backgraund-color-1: #2F303A;
-    --backgraung-color-2: #F5F4FA;
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --selection-text-color: #2196f3;
+  --white: #ffffff;
+  --backgraund-color-1: #2f303a;
+  --backgraung-color-2: #f5f4fa;
 }
-body{ 
-    color: var(--primary-text-color);
+body {
+  color: var(--primary-text-color);
+  font-family: Roboto;
 }
-.list{
-    list-style-type: none;
+.list {
+  list-style-type: none;
 }
 /* -------- Шапка сайта -------- */
-header{
-    background-color: var(--white);
+header {
+  background-color: var(--white);
 }
-.logo{
-    color: var(--title-text-color);
-    text-decoration: none;
-
+.logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
 }
-.logo-web{
-    color: var(--selection-text-color);
+.logo-web {
+  color: var(--selection-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
 }
-.nav-link{
-    color: var(--title-text-color);
-    text-decoration: none;
+.nav-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
 }
 .nav-link:hover,
 .nav-link:focus,
-.logo:focus{
-    color: var(--selection-text-color);
+.logo:focus {
+  color: var(--selection-text-color);
 }
-.contacts{
-    text-decoration: none;
-    color: var(--primary-text-color);
+.contacts {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 500;
 }
 .contacts:hover,
-.contacts:focus{
-    color: var(--selection-text-color);
+.contacts:focus {
+  color: var(--selection-text-color);
 }
 
 /* ------ секция герой (студия) ----- */
-.hero{
-    color: var(--white);
-    background-color: var(--backgraund-color-1);
+h1 {
+  color: var(--white);
+  background-color: var(--backgraund-color-1);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
 }
-.hero-link{
-    color: var(--white);
-    background-color: var(--selection-text-color);
-    text-decoration: none;
+.hero {
+  background-color: var(--backgraund-color-1);
+  text-align: center;
+}
+
+.hero-link {
+  color: var(--white);
+  background-color: var(--selection-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ------Наши особенности (студия)----- */
-.our-features-title{
-    color: var(--white);
+.our-features-title {
+  color: var(--white);
 }
-.our-features-item{
-    color: var(--title-text-color);
+.our-features-item {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.our-features-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 /* -----Чем мы занимаемся (студия)----- */
-.section-title{
-    color: var(--title-text-color);
+.section-title {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
 }
 /* -----Наша команда----- */
-.team{
-    background-color: var(--backgraung-color-2);
+.our-team {
+  background-color: var(--backgraung-color-2);
 }
-.team-name{
-    color: var(--title-text-color);
+
+.team-name {
+  color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.team {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.position {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 /* --------Подвал-------- */
-footer{
-    background-color: var(--backgraund-color-1);
+footer {
+  background-color: var(--backgraund-color-1);
 }
-.logo-studio-footer{
-    color: var(--white);
+.logo-studio-footer {
+  color: var(--white);
 }
-address{
-    color: var(--white);
+address {
+  color: var(--white);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+.contacts-footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
 }
 /* -----Кнопки сортировки проектов (портфолио)----- */
-.sort{
-    text-decoration: none;
-    color: var(--title-text-color);
-    background-color: var(--backgraung-color-2);
+.sort {
+  text-decoration: none;
+  color: var(--title-text-color);
+  background-color: var(--backgraung-color-2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
 }
 .sort:hover,
-.sort:focus{
-    color: var(--white);
-    background-color: var(--selection-text-color);
+.sort:focus {
+  color: var(--white);
+  background-color: var(--selection-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* -----Список проектов (портфолио)----- */
-.project-list{
-    color: var(--white);
+.project-list {
+  color: var(--white);
 }
-.project-list-item{
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-    width: 370px;
+.project-list-item {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  width: 370px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
 }
-.project-list-item-title{
-    color: var(--title-text-color);
+.project-list-item-title {
+  color: var(--title-text-color);
 }
