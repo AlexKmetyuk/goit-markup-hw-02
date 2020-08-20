@@ -19,13 +19,16 @@ body {
 .list {
   list-style-type: none;
 }
+.link {
+  text-decoration: none;
+}
+
 /* -------- Шапка сайта -------- */
 header {
   background-color: var(--white);
 }
 .logo {
   color: var(--title-text-color);
-  text-decoration: none;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -38,9 +41,11 @@ header {
   font-weight: bold;
   font-size: 26px;
 }
+.list .selection {
+  color: var(--selection-text-color);
+}
 .nav-link {
   color: var(--title-text-color);
-  text-decoration: none;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -51,7 +56,6 @@ header {
   color: var(--selection-text-color);
 }
 .contacts {
-  text-decoration: none;
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 500;
@@ -62,22 +66,18 @@ header {
 }
 
 /* ------ секция герой (студия) ----- */
-h1 {
+.hero {
   color: var(--white);
   background-color: var(--backgraund-color-1);
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-}
-.hero {
-  background-color: var(--backgraund-color-1);
   text-align: center;
 }
 
-.hero-link {
+.hero-button {
   color: var(--white);
   background-color: var(--selection-text-color);
-  text-decoration: none;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -85,17 +85,17 @@ h1 {
 }
 
 /* ------Наши особенности (студия)----- */
-.our-features-title {
+.our-features {
   color: var(--white);
 }
-.our-features-item {
+.features .title {
   color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
 }
 
-.our-features-text {
+.features .text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -153,12 +153,12 @@ address {
 }
 /* -----Кнопки сортировки проектов (портфолио)----- */
 .sort {
-  text-decoration: none;
   color: var(--title-text-color);
   background-color: var(--backgraung-color-2);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  border-radius: 4px;
 }
 .sort:hover,
 .sort:focus {
@@ -166,20 +166,23 @@ address {
   background-color: var(--selection-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 /* -----Список проектов (портфолио)----- */
 .project-list {
   color: var(--white);
 }
-.project-list-item {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  width: 370px;
+
+.projects .title {
+  color: var(--title-text-color);
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
 }
-.project-list-item-title {
-  color: var(--title-text-color);
+.projects .position {
+  color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
 }
